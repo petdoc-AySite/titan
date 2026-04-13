@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vanguard Project | Titan Global Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .mega-menu { opacity: 0; visibility: hidden; transition: all 0.3s ease; transform: translateY(10px); }
+        .group:hover .mega-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .bg-titan-dark { background-color: #1b252c; }
+        .text-titan-orange { color: #e83540; }
+        .bg-titan-orange { background-color: #e83540; }
+        .hover-zoom img { transition: transform 0.7s ease; }
+        .hover-zoom:hover img { transform: scale(1.05); }
+        
+        /* Accordion Logic for Process Section */
+        .content-drawer { max-height: 0; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .tab-input:checked ~ .content-drawer { max-height: 1000px; }
+        .tab-input:checked ~ .tab-label .icon-plus { display: none; }
+        .tab-input:checked ~ .tab-label .icon-minus { display: block; }
+        .icon-minus { display: none; }
+        
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <div class="bg-gray-100 text-xs text-gray-600 border-b hidden lg:block">
+        <div class="max-w-7xl mx-auto px-6 h-10 flex justify-between items-center">
+            <div class="flex space-x-6 font-medium tracking-wide">
+                <a href="leadership.html" class="hover:text-titan-orange transition font-bold text-gray-900">Leadership</a>
+                <a href="#" class="hover:text-titan-orange transition">Investors</a>
+                <a href="#" class="hover:text-titan-orange transition">Shareholders</a>
+                <a href="#" class="hover:text-titan-orange transition">Newsroom</a>
+                <a href="#" class="hover:text-titan-orange transition">Glossary</a>
+            </div>
+            <div class="flex space-x-6 items-center">
+                <a href="#" class="hover:text-titan-orange transition">Contact us</a>
+                <span class="font-bold text-gray-900 border-l pl-6">EN</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-titan-dark text-white sticky top-0 z-50 shadow-xl border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-black tracking-tighter cursor-pointer">
+                    TITAN<span class="text-titan-orange">GLOBAL</span>
+                </div>
+
+                <div class="hidden lg:flex space-x-8 h-full text-sm font-semibold tracking-wide">
+                    <div class="group h-full flex items-center">
+                        <button class="hover:text-titan-orange py-4 flex items-center transition">Group <svg class="w-4 h-4 ml-1 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                        <div class="mega-menu absolute top-20 left-0 w-full bg-white text-gray-800 shadow-2xl border-t border-gray-200">
+                            <div class="max-w-7xl mx-auto grid grid-cols-4 gap-8 p-10">
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Business Model</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="strategy.html" class="hover:text-titan-orange transition">Strategy & Performance</a></li>
+                                        <li><a href="footprint.html" class="hover:text-titan-orange transition">Global Footprint</a></li>
+                                        <li><a href="history.html" class="hover:text-titan-orange transition">History & Heritage</a></li>
+                                        <li><a href="leadership.html" class="hover:text-titan-orange transition">Leadership & Governance</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Our Businesses</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="concessions.html" class="hover:text-titan-orange transition">Titan Concessions</a></li>
+                                        <li><a href="energy-solutions.html" class="hover:text-titan-orange transition">Titan Energy Solutions</a></li>
+                                        <li><a href="construction.html" class="hover:text-titan-orange transition">Titan Construction</a></li>
+                                        <li><a href="#" class="hover:text-titan-orange transition">Titan Real Estate</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Research & Innovation</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="#" class="hover:text-titan-orange transition text-titan-orange font-bold">The Vanguard Project</a></li>
+                                        <li><a href="#" class="hover:text-titan-orange transition">Lab Recherche Environnement</a></li>
+                                        <li><a href="#" class="hover:text-titan-orange transition">Urban Transitions Think Tank</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-6 rounded border border-gray-100">
+                                    <span class="text-xs uppercase font-bold text-gray-400 mb-2 block">Featured Publication</span>
+                                    <p class="font-bold text-sm text-gray-900">2026 Universal Registration Document</p>
+                                    <a href="#" class="text-titan-orange text-xs font-bold mt-4 block hover:underline">Download PDF →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="flex items-center hover:text-titan-orange transition">Our Missions & Actions</a>
+                    <a href="#" class="flex items-center hover:text-titan-orange transition">Innovation</a>
+                    <a href="#" class="flex items-center hover:text-titan-orange transition">Join Us</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <button class="hover:text-titan-orange transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        
+        <section class="relative bg-titan-dark text-white py-24 lg:py-32 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-40">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" alt="Technology and Innovation">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-titan-dark via-titan-dark/90 to-transparent z-10"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-20">
+                <nav class="text-[10px] font-black text-titan-orange mb-6 uppercase tracking-[0.4em]">Research & Innovation</nav>
+                <h1 class="text-5xl lg:text-7xl font-black mb-8 tracking-tighter leading-[0.9] max-w-3xl">
+                    Accelerating the <br><span class="text-titan-orange">Future of Build.</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-2xl font-medium leading-relaxed">
+                    The Vanguard Project is Titan Global's premier foresight platform and startup incubator. We identify, fund, and scale the disruptive technologies that will define the next century of infrastructure.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-3xl lg:text-4xl font-black text-titan-dark tracking-tighter uppercase mb-6 leading-tight">Two Missions. <br>One Ecosystem.</h2>
+                        <div class="w-16 h-1 bg-titan-orange mb-8"></div>
+                        <p class="text-gray-600 mb-8 leading-relaxed font-medium">
+                            To maintain our position as a global leader, we cannot merely adapt to the future; we must invent it. The Vanguard Project operates dual mandates to achieve this: 
+                        </p>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="text-4xl font-black text-titan-orange opacity-50 mr-6 italic">01</div>
+                                <div>
+                                    <h4 class="font-black text-lg text-titan-dark uppercase tracking-tight mb-2">The Foresight Platform</h4>
+                                    <p class="text-sm text-gray-500 leading-relaxed">Our internal think-tank dedicated to analyzing macro-trends 20 years into the future. We study demographic shifts, climate volatility, and material scarcity to inform Titan Global's long-term corporate strategy.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-4xl font-black text-titan-orange opacity-50 mr-6 italic">02</div>
+                                <div>
+                                    <h4 class="font-black text-lg text-titan-dark uppercase tracking-tight mb-2">The Startup Incubator</h4>
+                                    <p class="text-sm text-gray-500 leading-relaxed">An intensive accelerator for Prop-Tech and Con-Tech startups. We provide early-stage founders with capital, mentorship, and crucially, access to our global construction sites to test their solutions in the real world.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 text-center flex flex-col justify-center h-48">
+                            <div class="text-4xl font-black text-titan-dark mb-2">$500M</div>
+                            <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Vanguard Venture Fund</div>
+                        </div>
+                        <div class="bg-titan-dark p-8 rounded-xl text-center flex flex-col justify-center h-48 text-white">
+                            <div class="text-4xl font-black text-titan-orange mb-2">45+</div>
+                            <div class="text-[10px] font-bold uppercase tracking-widest opacity-80">Startups Accelerated</div>
+                        </div>
+                        <div class="bg-titan-orange p-8 rounded-xl text-center flex flex-col justify-center h-48 text-white col-span-2">
+                            <div class="text-4xl font-black mb-2">12</div>
+                            <div class="text-[10px] font-bold uppercase tracking-widest opacity-90">Patents Co-Developed in 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-[10px] font-black text-titan-orange uppercase tracking-widest block mb-4">Investment Focus</span>
+                    <h2 class="text-4xl font-black text-titan-dark tracking-tighter uppercase">What We Build</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="group relative bg-white p-8 border border-gray-200 rounded-xl hover:border-titan-orange transition-all duration-300 overflow-hidden h-[320px] flex flex-col justify-end">
+                        <div class="absolute inset-0 bg-gray-100 z-0 group-hover:opacity-0 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover opacity-20 grayscale" alt="Robotics">
+                        </div>
+                        <div class="relative z-10 transform group-hover:-translate-y-4 transition-transform duration-500">
+                            <div class="w-12 h-12 bg-titan-dark text-titan-orange flex items-center justify-center rounded-lg mb-6">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <h3 class="font-black text-xl text-titan-dark uppercase tracking-tight mb-2">Robotics & Automation</h3>
+                            <p class="text-xs text-gray-500 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Exoskeletons, automated bricklaying, and drone-based surveying to enhance site safety and speed.</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative bg-white p-8 border border-gray-200 rounded-xl hover:border-titan-orange transition-all duration-300 overflow-hidden h-[320px] flex flex-col justify-end">
+                        <div class="absolute inset-0 bg-gray-100 z-0 group-hover:opacity-0 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover opacity-20 grayscale" alt="Data">
+                        </div>
+                        <div class="relative z-10 transform group-hover:-translate-y-4 transition-transform duration-500">
+                            <div class="w-12 h-12 bg-titan-dark text-titan-orange flex items-center justify-center rounded-lg mb-6">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                            </div>
+                            <h3 class="font-black text-xl text-titan-dark uppercase tracking-tight mb-2">AI & Predictive Modeling</h3>
+                            <p class="text-xs text-gray-500 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Digital twin technology, supply chain optimization algorithms, and predictive maintenance for concessions.</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative bg-white p-8 border border-gray-200 rounded-xl hover:border-titan-orange transition-all duration-300 overflow-hidden h-[320px] flex flex-col justify-end">
+                        <div class="absolute inset-0 bg-gray-100 z-0 group-hover:opacity-0 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover opacity-20 grayscale" alt="Materials">
+                        </div>
+                        <div class="relative z-10 transform group-hover:-translate-y-4 transition-transform duration-500">
+                            <div class="w-12 h-12 bg-titan-dark text-titan-orange flex items-center justify-center rounded-lg mb-6">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                            </div>
+                            <h3 class="font-black text-xl text-titan-dark uppercase tracking-tight mb-2">Next-Gen Materials</h3>
+                            <p class="text-xs text-gray-500 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Bio-based insulation, carbon-injected concrete, and self-healing asphalt to drastically cut Scope 3 emissions.</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative bg-white p-8 border border-gray-200 rounded-xl hover:border-titan-orange transition-all duration-300 overflow-hidden h-[320px] flex flex-col justify-end">
+                        <div class="absolute inset-0 bg-gray-100 z-0 group-hover:opacity-0 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover opacity-20 grayscale" alt="PropTech">
+                        </div>
+                        <div class="relative z-10 transform group-hover:-translate-y-4 transition-transform duration-500">
+                            <div class="w-12 h-12 bg-titan-dark text-titan-orange flex items-center justify-center rounded-lg mb-6">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                            </div>
+                            <h3 class="font-black text-xl text-titan-dark uppercase tracking-tight mb-2">Smart Prop-Tech</h3>
+                            <p class="text-xs text-gray-500 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">IoT sensor networks for energy efficiency, smart grid integration, and occupant wellness tracking in commercial real estate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-titan-dark text-white">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-black tracking-tighter uppercase italic">The Incubator Timeline</h2>
+                    <p class="text-gray-400 mt-4 font-medium">How we scale startups from seed to site.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="border border-white/20 rounded-lg overflow-hidden bg-white/5 backdrop-blur-sm">
+                        <input type="checkbox" id="step1" class="hidden tab-input" checked>
+                        <label for="step1" class="tab-label flex justify-between items-center p-6 cursor-pointer hover:bg-white/10 transition">
+                            <div class="flex items-center">
+                                <span class="text-titan-orange font-black text-xl mr-4 italic">01</span>
+                                <span class="font-black uppercase tracking-widest text-sm">Sourcing & Seed</span>
+                            </div>
+                            <span class="text-titan-orange font-bold text-2xl icon-plus">+</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-minus">−</span>
+                        </label>
+                        <div class="content-drawer">
+                            <div class="p-6 border-t border-white/10 text-sm leading-relaxed text-gray-300">
+                                We host biannual global pitch competitions in Paris, New York, and Singapore. Selected startups receive an initial equity-free grant of $100k, alongside dedicated desk space in our regional Innovation Hubs.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border border-white/20 rounded-lg overflow-hidden bg-white/5 backdrop-blur-sm">
+                        <input type="checkbox" id="step2" class="hidden tab-input">
+                        <label for="step2" class="tab-label flex justify-between items-center p-6 cursor-pointer hover:bg-white/10 transition">
+                            <div class="flex items-center">
+                                <span class="text-titan-orange font-black text-xl mr-4 italic">02</span>
+                                <span class="font-black uppercase tracking-widest text-sm">The Sandbox</span>
+                            </div>
+                            <span class="text-titan-orange font-bold text-2xl icon-plus">+</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-minus">−</span>
+                        </label>
+                        <div class="content-drawer">
+                            <div class="p-6 border-t border-white/10 text-sm leading-relaxed text-gray-300">
+                                This is our differentiator. Startups are paired with a Titan Project Manager and given access to a live construction site or operational concession asset to safely deploy, test, and refine their prototype under real-world conditions.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border border-white/20 rounded-lg overflow-hidden bg-white/5 backdrop-blur-sm">
+                        <input type="checkbox" id="step3" class="hidden tab-input">
+                        <label for="step3" class="tab-label flex justify-between items-center p-6 cursor-pointer hover:bg-white/10 transition">
+                            <div class="flex items-center">
+                                <span class="text-titan-orange font-black text-xl mr-4 italic">03</span>
+                                <span class="font-black uppercase tracking-widest text-sm">Vanguard Investment</span>
+                            </div>
+                            <span class="text-titan-orange font-bold text-2xl icon-plus">+</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-minus">−</span>
+                        </label>
+                        <div class="content-drawer">
+                            <div class="p-6 border-t border-white/10 text-sm leading-relaxed text-gray-300">
+                                Following successful pilot validation, the Vanguard Fund steps in as a lead or strategic investor for Seed to Series B rounds, injecting capital between $1M and $15M to accelerate hardware production or software scaling.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border border-white/20 rounded-lg overflow-hidden bg-white/5 backdrop-blur-sm">
+                        <input type="checkbox" id="step4" class="hidden tab-input">
+                        <label for="step4" class="tab-label flex justify-between items-center p-6 cursor-pointer hover:bg-white/10 transition">
+                            <div class="flex items-center">
+                                <span class="text-titan-orange font-black text-xl mr-4 italic">04</span>
+                                <span class="font-black uppercase tracking-widest text-sm">Global Integration</span>
+                            </div>
+                            <span class="text-titan-orange font-bold text-2xl icon-plus">+</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-minus">−</span>
+                        </label>
+                        <div class="content-drawer">
+                            <div class="p-6 border-t border-white/10 text-sm leading-relaxed text-gray-300">
+                                The ultimate goal. We onboard the startup's mature technology directly into Titan Global's supply chain as an official vendor, deploying their solution across our multi-billion dollar project portfolio worldwide.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 text-sm border-t-4 border-titan-orange">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-6 gap-8 border-b border-gray-800 pb-12">
+            <div class="col-span-2">
+                <div class="text-white font-black text-2xl tracking-tighter mb-4">TITAN<span class="text-titan-orange">GLOBAL</span></div>
+                <p class="text-xs leading-relaxed max-w-xs">A world leader in concessions, energy solutions, and construction, striving to serve a useful purpose and care for the planet.</p>
+            </div>
+            
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Group</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="strategy.html" class="hover:text-white transition">Business model</a></li>
+                    <li><a href="#" class="hover:text-white transition">Our businesses</a></li>
+                    <li><a href="#" class="hover:text-white transition">Research & innovation</a></li>
+                    <li><a href="#" class="hover:text-white transition">Our eMAG</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Our Actions</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="#" class="hover:text-white transition">Acting for the climate</a></li>
+                    <li><a href="#" class="hover:text-white transition">Circular economy</a></li>
+                    <li><a href="#" class="hover:text-white transition">Responsible employer</a></li>
+                    <li><a href="#" class="hover:text-white transition">Human rights</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Shareholders</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="#" class="hover:text-white transition">Investors</a></li>
+                    <li><a href="#" class="hover:text-white transition">Key Figures</a></li>
+                    <li><a href="#" class="hover:text-white transition">Financial Calendar</a></li>
+                    <li><a href="#" class="hover:text-white transition">Glossary</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">External Links</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="#" class="hover:text-white transition">Titan Foundation</a></li>
+                    <li><a href="#" class="hover:text-white transition">Urban Transitions</a></li>
+                    <li><a href="#" class="hover:text-white transition">Titan Vanguard</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+            <p>&copy; 2026 Titan Global Construction. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0 font-medium">
+                <a href="index.html" class="hover:text-white transition">Homepage</a>
+                <a href="#" class="hover:text-white transition">Legal notices</a>
+                <a href="#" class="hover:text-white transition">Contact us</a>
+                <a href="#" class="hover:text-white transition">Cookie policy</a>
+                <a href="#" class="hover:text-white transition">Personal data</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

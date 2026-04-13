@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy & Performance | Titan Global</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .mega-menu { opacity: 0; visibility: hidden; transition: all 0.3s ease; transform: translateY(10px); }
+        .group:hover .mega-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .bg-titan-dark { background-color: #1b252c; }
+        .text-titan-orange { color: #e83540; }
+        .bg-titan-orange { background-color: #e83540; }
+        .roadmap-line { position: relative; }
+        .roadmap-line::before { content: ''; position: absolute; left: 50%; width: 2px; height: 100%; background: #e2e8f0; z-index: 0; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 antialiased">
+    <div class="bg-gray-100 text-xs text-gray-600 border-b hidden lg:block">
+        <div class="max-w-7xl mx-auto px-6 h-10 flex justify-between items-center">
+            <div class="flex space-x-6 font-medium tracking-wide">
+                <a href="leadership.html" class="hover:text-titan-orange transition font-bold text-gray-900 border-b-2 border-titan-orange">Leadership</a>
+                <a href="INVESTORS.HTML" class="hover:text-titan-orange transition">Investors</a>
+                <a href="INVESTORS.HTML" class="hover:text-titan-orange transition">Shareholders</a>
+                <a href="newsroom.html" class="hover:text-titan-orange transition">Newsroom</a>
+                <a href="glossary.html" class="hover:text-titan-orange transition">Glossary</a>
+            </div>
+            <div class="flex space-x-6 items-center">
+                <a href="contact.html" class="hover:text-titan-orange transition">Contact us</a>
+                <span class="font-bold text-gray-900 border-l pl-6">EN</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-titan-dark text-white sticky top-0 z-50 shadow-xl border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-black tracking-tighter cursor-pointer" onclick="window.location.href='index.html'">
+                    TITAN<span class="text-titan-orange">GLOBAL</span>
+                </div>
+
+                <div class="hidden lg:flex space-x-8 h-full text-sm font-semibold tracking-wide">
+                    <div class="group h-full flex items-center">
+                        <button class="hover:text-titan-orange py-4 flex items-center transition">Group <svg class="w-4 h-4 ml-1 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                        <div class="mega-menu absolute top-20 left-0 w-full bg-white text-gray-800 shadow-2xl border-t border-gray-200">
+                            <div class="max-w-7xl mx-auto grid grid-cols-4 gap-8 p-10">
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Business Model</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="strategy.html" class="hover:text-titan-orange transition font-bold text-titan-orange">Strategy & Performance</a></li>
+                                        <li><a href="footprint.html" class="hover:text-titan-orange transition">Global Footprint</a></li>
+                                        <li><a href="history.html" class="hover:text-titan-orange transition">History & Heritage</a></li>
+                                        <li><a href="leadership.html" class="hover:text-titan-orange transition">Leadership & Governance</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Our Businesses</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="concessions.html" class="hover:text-titan-orange transition">Titan Concessions</a></li>
+                                        <li><a href="energy-solutions.html" class="hover:text-titan-orange transition">Titan Energy Solutions</a></li>
+                                        <li><a href="construction.html" class="hover:text-titan-orange transition">Titan Construction</a></li>
+                                        <li><a href="real-estate.html" class="hover:text-titan-orange transition">Titan Real Estate</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Research & Innovation</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="vanguard.html" class="hover:text-titan-orange transition">The Vanguard Project</a></li>
+                                        <li><a href="lab-recherche.html" class="hover:text-titan-orange transition">Lab Recherche Environnement</a></li>
+                                        <li><a href="urban-think-tank.html" class="hover:text-titan-orange transition">Urban Transitions Think Tank</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-6 rounded border border-gray-100">
+                                    <span class="text-xs uppercase font-bold text-gray-400 mb-2 block">Featured Publication</span>
+                                    <p class="font-bold text-sm text-gray-900">2026 Universal Registration Document</p>
+                                    <a href="REGISTRATION-DOCUMENT-2026.HTML" class="text-titan-orange text-xs font-bold mt-4 block hover:underline">Download PDF →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="missions-actions.html" class="flex items-center hover:text-titan-orange transition">Our Missions & Actions</a>
+                    <a href="innovation.html" class="flex items-center hover:text-titan-orange transition">Innovation</a>
+                    <a href="careers.html" class="flex items-center hover:text-titan-orange transition">Join Us</a>
+                </div>
+                <div class="flex items-center">
+                    <button class="hover:text-titan-orange transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-titan-dark py-16 text-white border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <nav class="flex text-xs uppercase tracking-widest font-bold text-gray-500 mb-8">
+                <a href="index.html" class="hover:text-white">Home</a>
+                <span class="mx-3">/</span>
+                <span class="text-titan-orange">Strategy & Performance</span>
+            </nav>
+            <h1 class="text-5xl font-black max-w-4xl leading-tight">Driving performance through <br>social and economic utility.</h1>
+        </div>
+    </header>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-3xl font-black text-titan-dark mb-6">Our Integrated Model</h2>
+                <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                    Titan Global Construction operates at the intersection of long-term concessions and high-tech construction. This "virtuous circle" allows us to finance the infrastructure of tomorrow through the stable revenues of today’s operations.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center p-4 bg-gray-50 border-l-4 border-titan-orange">
+                        <span class="font-bold text-titan-dark">Concessions:</span>
+                        <span class="ml-2 text-gray-600">Stable, predictable, long-term cash flow.</span>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 border-l-4 border-titan-dark">
+                        <span class="font-bold text-titan-dark">Construction:</span>
+                        <span class="ml-2 text-gray-600">Technical agility and regional presence.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-100 rounded-2xl p-10 flex items-center justify-center border border-gray-200">
+                <div class="text-center">
+                    <p class="text-titan-orange font-black text-6xl mb-2">€68.8B</p>
+                    <p class="text-gray-500 uppercase tracking-widest font-bold text-sm">2025 Revenue</p>
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded shadow-sm"><p class="font-bold text-titan-dark">44%</p><p class="text-xs text-gray-500 uppercase">International</p></div>
+                        <div class="bg-white p-4 rounded shadow-sm"><p class="font-bold text-titan-dark">56%</p><p class="text-xs text-gray-500 uppercase">Domestic</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black text-titan-dark">Strategic Roadmap 2030</h2>
+                <p class="text-gray-500 mt-4 uppercase tracking-widest font-bold text-sm">Our three pillars of growth</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-white shadow-lg rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-titan-orange transition duration-300">
+                        <svg class="w-8 h-8 text-titan-orange group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4">Environmental Transition</h3>
+                    <p class="text-sm text-gray-600">Achieving -40% reduction in CO2 emissions across all construction sites and concession assets.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-white shadow-lg rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-titan-orange transition duration-300">
+                        <svg class="w-8 h-8 text-titan-orange group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4">Energy Sovereignty</h3>
+                    <p class="text-sm text-gray-600">Leading the deployment of hydrogen infrastructure and offshore wind connectivity across Europe.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-white shadow-lg rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-titan-orange transition duration-300">
+                        <svg class="w-8 h-8 text-titan-orange group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4">Employee Shareholding</h3>
+                    <p class="text-sm text-gray-600">90% of our workforce are shareholders, aligning their success with the Group’s long-term value.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 text-sm border-t-4 border-titan-orange">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-6 gap-8 border-b border-gray-800 pb-12">
+            <div class="col-span-2">
+                <div class="text-white font-black text-2xl tracking-tighter mb-4">TITAN<span class="text-titan-orange">GLOBAL</span></div>
+                <p class="text-xs leading-relaxed max-w-xs">A world leader in concessions, energy solutions, and construction, striving to serve a useful purpose and care for the planet.</p>
+                <div class="mt-6 flex space-x-4">
+                    <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-titan-orange transition cursor-pointer text-white">in</div>
+                    <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-titan-orange transition cursor-pointer text-white">X</div>
+                    <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-titan-orange transition cursor-pointer text-white">yt</div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Group</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="strategy.html" class="hover:text-white transition">Business model</a></li>
+                    <li><a href="index.html#businesses" class="hover:text-white transition">Our businesses</a></li>
+                    <li><a href="innovation.html" class="hover:text-white transition">Research & innovation</a></li>
+                    <li><a href="EMAG.HTML" class="hover:text-white transition">Our eMAG</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Our Actions</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="climate.html" class="hover:text-white transition">Acting for the climate</a></li>
+                    <li><a href="circular-economy.html" class="hover:text-white transition">Circular economy</a></li>
+                    <li><a href="employer.html" class="hover:text-white transition">Responsible employer</a></li>
+                    <li><a href="human-rights.html" class="hover:text-white transition">Human rights</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Shareholders</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="INVESTORS.HTML" class="hover:text-white transition">Investors</a></li>
+                    <li><a href="key-figures.html" class="hover:text-white transition">Key Figures</a></li>
+                    <li><a href="CALENDAR.HTML" class="hover:text-white transition">Financial Calendar</a></li>
+                    <li><a href="glossary.html" class="hover:text-white transition">Glossary</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">External Links</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="foundation.html" class="hover:text-white transition">Titan Foundation</a></li>
+                    <li><a href="urban-think-tank.html" class="hover:text-white transition">Urban Transitions</a></li>
+                    <li><a href="vanguard.html" class="hover:text-white transition">Titan Vanguard</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+            <p>&copy; 2026 Titan Global Construction. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0 font-medium">
+                <a href="index.html" class="hover:text-white transition">Homepage</a>
+                <a href="legal.html" class="hover:text-white transition">Legal notices</a>
+                <a href="contact.html" class="hover:text-white transition">Contact us</a>
+                <a href="cookies.html" class="hover:text-white transition">Cookie policy</a>
+                <a href="privacy.html" class="hover:text-white transition">Personal data</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

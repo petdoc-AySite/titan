@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History & Heritage | Titan Global Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .mega-menu { opacity: 0; visibility: hidden; transition: all 0.3s ease; transform: translateY(10px); }
+        .group:hover .mega-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .bg-titan-dark { background-color: #1b252c; }
+        .text-titan-orange { color: #e83540; }
+        .bg-titan-orange { background-color: #e83540; }
+        .hover-zoom img { transition: transform 0.7s ease; }
+        .hover-zoom:hover img { transform: scale(1.05); }
+        html { scroll-behavior: smooth; }
+        
+        /* Custom Timeline Styles */
+        .timeline-line { border-left: 4px solid #e83540; }
+        .timeline-dot { position: absolute; left: -12px; top: 6px; width: 20px; height: 20px; background-color: #1b252c; border: 4px solid #e83540; border-radius: 50%; transition: all 0.3s ease; }
+        .timeline-item:hover .timeline-dot { transform: scale(1.3); background-color: #e83540; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 antialiased">
+
+    <div class="bg-gray-100 text-xs text-gray-600 border-b hidden lg:block">
+        <div class="max-w-7xl mx-auto px-6 h-10 flex justify-between items-center">
+            <div class="flex space-x-6 font-medium tracking-wide">
+                <a href="leadership.html" class="hover:text-titan-orange transition font-bold text-gray-900 border-b-2 border-titan-orange">Leadership</a>
+                <a href="INVESTORS.HTML" class="hover:text-titan-orange transition">Investors</a>
+                <a href="INVESTORS.HTML" class="hover:text-titan-orange transition">Shareholders</a>
+                <a href="newsroom.html" class="hover:text-titan-orange transition">Newsroom</a>
+                <a href="glossary.html" class="hover:text-titan-orange transition">Glossary</a>
+            </div>
+            <div class="flex space-x-6 items-center">
+                <a href="contact.html" class="hover:text-titan-orange transition">Contact us</a>
+                <span class="font-bold text-gray-900 border-l pl-6">EN</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-titan-dark text-white sticky top-0 z-50 shadow-xl border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-black tracking-tighter cursor-pointer" onclick="window.location.href='index.html'">
+                    TITAN<span class="text-titan-orange">GLOBAL</span>
+                </div>
+
+                <div class="hidden lg:flex space-x-8 h-full text-sm font-semibold tracking-wide">
+                    <div class="group h-full flex items-center">
+                        <button class="hover:text-titan-orange py-4 flex items-center transition">Group <svg class="w-4 h-4 ml-1 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                        <div class="mega-menu absolute top-20 left-0 w-full bg-white text-gray-800 shadow-2xl border-t border-gray-200">
+                            <div class="max-w-7xl mx-auto grid grid-cols-4 gap-8 p-10">
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Business Model</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="strategy.html" class="hover:text-titan-orange transition">Strategy & Performance</a></li>
+                                        <li><a href="footprint.html" class="hover:text-titan-orange transition">Global Footprint</a></li>
+                                        <li><a href="history.html" class="hover:text-titan-orange transition font-bold text-titan-orange">History & Heritage</a></li>
+                                        <li><a href="leadership.html" class="hover:text-titan-orange transition ">Leadership & Governance</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Our Businesses</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="concessions.html" class="hover:text-titan-orange transition">Titan Concessions</a></li>
+                                        <li><a href="energy-solutions.html" class="hover:text-titan-orange transition">Titan Energy Solutions</a></li>
+                                        <li><a href="construction.html" class="hover:text-titan-orange transition">Titan Construction</a></li>
+                                        <li><a href="real-estate.html" class="hover:text-titan-orange transition">Titan Real Estate</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Research & Innovation</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="vanguard.html" class="hover:text-titan-orange transition">The Vanguard Project</a></li>
+                                        <li><a href="lab-recherche.html" class="hover:text-titan-orange transition">Lab Recherche Environnement</a></li>
+                                        <li><a href="urban-think-tank.html" class="hover:text-titan-orange transition">Urban Transitions Think Tank</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-6 rounded border border-gray-100">
+                                    <span class="text-xs uppercase font-bold text-gray-400 mb-2 block">Featured Publication</span>
+                                    <p class="font-bold text-sm text-gray-900">2026 Universal Registration Document</p>
+                                    <a href="REGISTRATION-DOCUMENT-2026.HTML" class="text-titan-orange text-xs font-bold mt-4 block hover:underline">Download PDF →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="missions-actions.html" class="flex items-center hover:text-titan-orange transition">Our Missions & Actions</a>
+                    <a href="innovation.html" class="flex items-center hover:text-titan-orange transition">Innovation</a>
+                    <a href="careers.html" class="flex items-center hover:text-titan-orange transition">Join Us</a>
+                </div>
+                <div class="flex items-center">
+                    <button class="hover:text-titan-orange transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-titan-dark py-24 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <img src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&fit=crop&q=80&w=2079" class="w-full h-full object-cover grayscale mix-blend-overlay" alt="Heritage Background">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <nav class="flex text-xs uppercase tracking-widest font-bold text-gray-400 mb-6">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <span class="mx-3">/</span>
+                <span class="text-titan-orange">History & Heritage</span>
+            </nav>
+            <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">Over a Century of<br>Building the Future.</h1>
+            <p class="text-xl text-gray-300 max-w-3xl leading-relaxed font-light">
+                Since 1892, Titan Global Construction has been at the forefront of infrastructure development. From the first transcontinental railways to today's smart energy grids, our heritage is built on a foundation of engineering excellence and bold innovation.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-black text-titan-dark mb-6">A Legacy of Progress</h2>
+            <p class="text-gray-600 text-lg leading-relaxed">
+                Our history is a testament to the men and women who have shaped the world's landscapes. Through wars, economic shifts, and technological revolutions, Titan has continuously adapted, merging with other visionary companies to become the multi-local enterprise we are today.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            
+            <div class="timeline-line pl-8 ml-4 relative">
+                
+                <div class="timeline-item relative mb-16">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                        <span class="text-titan-orange font-black text-3xl block mb-2">1892</span>
+                        <h3 class="text-xl font-bold text-titan-dark mb-4">The Foundation</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Founded as a small civil engineering firm in Europe, the company initially focused on paving roads and laying the groundwork for early municipal water systems. The commitment to quality quickly earned government contracts for emerging railway networks.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative mb-16">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                        <span class="text-titan-orange font-black text-3xl block mb-2">1954</span>
+                        <h3 class="text-xl font-bold text-titan-dark mb-4">Post-War Reconstruction & Expansion</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Following WWII, Titan played a critical role in rebuilding major European cities. This era marked our first foray into large-scale energy infrastructure, constructing hydroelectric dams that still power millions of homes today.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative mb-16">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                        <span class="text-titan-orange font-black text-3xl block mb-2">1988</span>
+                        <h3 class="text-xl font-bold text-titan-dark mb-4">The Birth of Titan Concessions</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Pioneering the public-private partnership model, Titan began managing the infrastructure it built. The creation of the Concessions division allowed for the long-term management of motorways and airports, establishing a recurring revenue model that stabilized global growth.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative mb-16">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                        <span class="text-titan-orange font-black text-3xl block mb-2">2005</span>
+                        <h3 class="text-xl font-bold text-titan-dark mb-4">Global Reach & The Americas</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            A decade of aggressive international expansion. Titan cemented its footprint in North America, initiating major industrial and logistics corridors—including early developments that would eventually lead to modern mega-hubs in California's Inland Empire and the Altamont Pass region.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative mb-16">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                        <span class="text-titan-orange font-black text-3xl block mb-2">2018</span>
+                        <h3 class="text-xl font-bold text-titan-dark mb-4">The Green Transition</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Titan officially launched its Environmental Ambition plan, committing to net-zero emissions by 2050. The Energy Solutions division was restructured to focus heavily on renewable integration, green hydrogen facilities, and low-carbon concrete alternatives.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-titan-dark p-8 rounded-xl shadow-lg border border-gray-800 text-white">
+                        <span class="text-titan-orange font-black text-3xl block mb-2">2026</span>
+                        <h3 class="text-xl font-bold mb-4">Engineering a Sustainable World</h3>
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            Today, operating across 120 countries with over 285,000 employees, Titan Global Construction continues to merge deep technical expertise with ecological responsibility through initiatives like The Vanguard Project.
+                        </p>
+                        <a href="strategy.html" class="inline-flex items-center font-bold text-titan-orange hover:text-white transition">
+                            Read our Modern Strategy &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 text-sm border-t-4 border-titan-orange">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-6 gap-8 border-b border-gray-800 pb-12">
+            <div class="col-span-2">
+                <div class="text-white font-black text-2xl tracking-tighter mb-4">TITAN<span class="text-titan-orange">GLOBAL</span></div>
+                <p class="text-xs leading-relaxed max-w-xs">A world leader in concessions, energy solutions, and construction, striving to serve a useful purpose and care for the planet.</p>
+            </div>
+            
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Group</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="strategy.html" class="hover:text-white transition">Business model</a></li>
+                    <li><a href="index.html#businesses" class="hover:text-white transition">Our businesses</a></li>
+                    <li><a href="innovation.html" class="hover:text-white transition">Research & innovation</a></li>
+                    <li><a href="EMAG.HTML" class="hover:text-white transition">Our eMAG</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Our Actions</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="climate.html" class="hover:text-white transition">Acting for the climate</a></li>
+                    <li><a href="circular-economy.html" class="hover:text-white transition">Circular economy</a></li>
+                    <li><a href="employer.html" class="hover:text-white transition">Responsible employer</a></li>
+                    <li><a href="human-rights.html" class="hover:text-white transition">Human rights</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Shareholders</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="INVESTORS.HTML" class="hover:text-white transition">Investors</a></li>
+                    <li><a href="key-figures.html" class="hover:text-white transition">Key Figures</a></li>
+                    <li><a href="CALENDAR.HTML" class="hover:text-white transition">Financial Calendar</a></li>
+                    <li><a href="glossary.html" class="hover:text-white transition">Glossary</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">External Links</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="foundation.html" class="hover:text-white transition">Titan Foundation</a></li>
+                    <li><a href="urban-think-tank.html" class="hover:text-white transition">Urban Transitions</a></li>
+                    <li><a href="vanguard.html" class="hover:text-white transition">Titan Vanguard</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+            <p>&copy; 2026 Titan Global Construction. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0 font-medium">
+                <a href="index.html" class="hover:text-white transition">Homepage</a>
+                <a href="legal.html" class="hover:text-white transition">Legal notices</a>
+                <a href="contact.html" class="hover:text-white transition">Contact us</a>
+                <a href="cookies.html" class="hover:text-white transition">Cookie policy</a>
+                <a href="privacy.html" class="hover:text-white transition">Personal data</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

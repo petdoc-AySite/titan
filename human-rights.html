@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Rights & Ethics | Titan Global Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .mega-menu { opacity: 0; visibility: hidden; transition: all 0.3s ease; transform: translateY(10px); }
+        .group:hover .mega-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .bg-titan-dark { background-color: #1b252c; }
+        .text-titan-orange { color: #e83540; }
+        .bg-titan-orange { background-color: #e83540; }
+        .hover-zoom img { transition: transform 0.7s ease; }
+        .hover-zoom:hover img { transform: scale(1.05); }
+        html { scroll-behavior: smooth; }
+
+        /* Content Drawer Logic */
+        .content-drawer { max-height: 0; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .tab-input:checked ~ .content-drawer { max-height: 2000px; }
+        .tab-input:checked ~ .tab-label .icon-plus { display: none; }
+        .tab-input:checked ~ .tab-label .icon-minus { display: block; }
+        .icon-minus { display: none; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 antialiased">
+
+    <div class="bg-gray-100 text-xs text-gray-600 border-b hidden lg:block">
+        <div class="max-w-7xl mx-auto px-6 h-10 flex justify-between items-center">
+            <div class="flex space-x-6 font-medium tracking-wide">
+                <a href="leadership.html" class="hover:text-titan-orange transition font-bold text-gray-900">Leadership</a>
+                <a href="#" class="hover:text-titan-orange transition">Investors</a>
+                <a href="#" class="hover:text-titan-orange transition">Shareholders</a>
+                <a href="#" class="hover:text-titan-orange transition">Newsroom</a>
+                <a href="#" class="hover:text-titan-orange transition">Glossary</a>
+            </div>
+            <div class="flex space-x-6 items-center">
+                <a href="#" class="hover:text-titan-orange transition">Contact us</a>
+                <span class="font-bold text-gray-900 border-l pl-6">EN</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-titan-dark text-white sticky top-0 z-50 shadow-xl border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-black tracking-tighter cursor-pointer">
+                    TITAN<span class="text-titan-orange">GLOBAL</span>
+                </div>
+                <div class="hidden lg:flex space-x-8 h-full text-sm font-semibold tracking-wide">
+                    <div class="group h-full flex items-center">
+                        <button class="hover:text-titan-orange py-4 flex items-center transition">Group <svg class="w-4 h-4 ml-1 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                        <div class="mega-menu absolute top-20 left-0 w-full bg-white text-gray-800 shadow-2xl border-t border-gray-200">
+                            <div class="max-w-7xl mx-auto grid grid-cols-4 gap-8 p-10">
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Business Model</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="strategy.html" class="hover:text-titan-orange transition">Strategy & Performance</a></li>
+                                        <li><a href="footprint.html" class="hover:text-titan-orange transition">Global Footprint</a></li>
+                                        <li><a href="history.html" class="hover:text-titan-orange transition">History & Heritage</a></li>
+                                        <li><a href="leadership.html" class="hover:text-titan-orange transition">Leadership & Governance</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Our Businesses</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="concessions.html" class="hover:text-titan-orange transition">Titan Concessions</a></li>
+                                        <li><a href="energy-solutions.html" class="hover:text-titan-orange transition">Titan Energy Solutions</a></li>
+                                        <li><a href="construction.html" class="hover:text-titan-orange transition">Titan Construction</a></li>
+                                        <li><a href="real-estate.html" class="hover:text-titan-orange transition">Titan Real Estate</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Research & Innovation</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="#" class="hover:text-titan-orange transition">The Vanguard Project</a></li>
+                                        <li><a href="#" class="hover:text-titan-orange transition">Lab Recherche Environnement</a></li>
+                                        <li><a href="#" class="hover:text-titan-orange transition">Urban Transitions Think Tank</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-6 rounded border border-gray-100">
+                                    <span class="text-xs uppercase font-bold text-gray-400 mb-2 block">Featured Publication</span>
+                                    <p class="font-bold text-sm text-gray-900">2026 Universal Registration Document</p>
+                                    <a href="#" class="text-titan-orange text-xs font-bold mt-4 block hover:underline">Download PDF →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="missions-actions.html" class="flex items-center hover:text-titan-orange transition">Our Missions & Actions</a>
+                    <a href="#" class="flex items-center hover:text-titan-orange transition">Innovation</a>
+                    <a href="#" class="flex items-center hover:text-titan-orange transition">Join Us</a>
+                </div>
+                <div class="flex items-center">
+                    <button class="hover:text-titan-orange transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="relative bg-titan-dark text-white py-24 overflow-hidden">
+            <div class="absolute inset-0 opacity-20">
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" alt="Ethics background">
+            </div>
+            <div class="max-w-5xl mx-auto px-6 relative z-10">
+                <nav class="flex items-center space-x-2 text-[10px] font-black uppercase tracking-widest mb-8 text-gray-400">
+                    <a href="missions-actions.html" class="hover:text-titan-orange transition">Our Missions & Actions</a>
+                    <span>/</span>
+                    <span class="text-titan-orange">Human Rights & Ethics</span>
+                </nav>
+                <h1 class="text-6xl font-black mb-6 tracking-tighter uppercase leading-none italic">
+                    Integrity in <span class="text-titan-orange">Every Action.</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-2xl font-medium leading-relaxed">
+                    Our commitment to human rights and corporate ethics is non-negotiable. As a global leader, we define our success not just by the structures we build, but by the integrity of the path we take to reach them.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-6">
+                
+                <div class="mb-16 border-l-8 border-titan-orange pl-8 py-2">
+                    <h2 class="text-3xl font-black uppercase tracking-tighter mb-4 text-titan-dark">Global Governance Framework</h2>
+                    <p class="text-gray-600 font-medium italic leading-relaxed">
+                        At Titan Global, ethics is a collective responsibility. Our governance framework ensures compliance with international standards and fosters a culture of transparency across all subsidiaries.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    
+                    <div class="border border-gray-200 rounded-lg overflow-hidden transition-shadow hover:shadow-md">
+                        <input type="checkbox" id="rights" class="hidden tab-input" checked>
+                        <label for="rights" class="tab-label flex justify-between items-center p-6 cursor-pointer bg-white">
+                            <span class="font-black text-titan-dark uppercase tracking-widest text-sm italic">01. Fundamental Human Rights</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-plus">+</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-minus">−</span>
+                        </label>
+                        <div class="content-drawer">
+                            <div class="p-8 border-t border-gray-100 bg-gray-50 space-y-4 text-sm leading-relaxed text-gray-700 font-medium">
+                                <p>Titan Global is a signatory of the UN Global Compact. We commit to:</p>
+                                <ul class="list-disc ml-5 space-y-2">
+                                    <li>Eradicating forced and child labor within our operations and supply chains.</li>
+                                    <li>Ensuring a safe and healthy working environment for all project staff.</li>
+                                    <li>Guaranteeing freedom of association and the right to collective bargaining.</li>
+                                    <li>Eliminating discrimination in respect of employment and occupation.</li>
+                                </ul>
+                                <div class="bg-white p-4 border border-gray-200 rounded mt-6 italic text-gray-500">
+                                    "We conduct rigorous human rights impact assessments in high-risk zones before project commencement."
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden transition-shadow hover:shadow-md">
+                        <input type="checkbox" id="ethics" class="hidden tab-input">
+                        <label for="ethics" class="tab-label flex justify-between items-center p-6 cursor-pointer bg-white">
+                            <span class="font-black text-titan-dark uppercase tracking-widest text-sm italic">02. Corporate Code of Ethics</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-plus">+</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-minus">−</span>
+                        </label>
+                        <div class="content-drawer">
+                            <div class="p-8 border-t border-gray-100 bg-gray-50 text-sm leading-relaxed text-gray-700">
+                                <p class="mb-4 font-medium">Our Code of Ethics applies to every employee, officer, and partner. It establishes zero tolerance for:</p>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="p-4 bg-white border border-gray-200">
+                                        <h4 class="font-black text-xs uppercase mb-2 text-titan-orange italic">Anti-Corruption</h4>
+                                        <p class="text-xs">Strict prohibition of bribery, facilitation payments, and inappropriate gifts.</p>
+                                    </div>
+                                    <div class="p-4 bg-white border border-gray-200">
+                                        <h4 class="font-black text-xs uppercase mb-2 text-titan-orange italic">Conflicts of Interest</h4>
+                                        <p class="text-xs">Clear protocols for declaring and mitigating personal or financial conflicts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden transition-shadow hover:shadow-md">
+                        <input type="checkbox" id="vigilance" class="hidden tab-input">
+                        <label for="vigilance" class="tab-label flex justify-between items-center p-6 cursor-pointer bg-white">
+                            <span class="font-black text-titan-dark uppercase tracking-widest text-sm italic">03. Duty of Vigilance (Supply Chain)</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-plus">+</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-minus">−</span>
+                        </label>
+                        <div class="content-drawer">
+                            <div class="p-8 border-t border-gray-100 bg-gray-50 text-sm leading-relaxed text-gray-700">
+                                <p class="mb-4 font-medium">Our Vigilance Plan identifies risks and prevents serious violations of human rights and environmental health across our supply chain.</p>
+                                <div class="space-y-4">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-1.5 h-1.5 bg-titan-orange rounded-full mt-1.5"></div>
+                                        <div><span class="font-bold">Risk Mapping:</span> Identification of risk areas by business line and geographic location.</div>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-1.5 h-1.5 bg-titan-orange rounded-full mt-1.5"></div>
+                                        <div><span class="font-bold">Third-Party Evaluation:</span> Systematic audits of our subcontractors and suppliers.</div>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-1.5 h-1.5 bg-titan-orange rounded-full mt-1.5"></div>
+                                        <div><span class="font-bold">Reporting:</span> Annual monitoring of our risk mitigation measures.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden transition-shadow hover:shadow-md">
+                        <input type="checkbox" id="hotline" class="hidden tab-input">
+                        <label for="hotline" class="tab-label flex justify-between items-center p-6 cursor-pointer bg-white text-titan-orange">
+                            <span class="font-black uppercase tracking-widest text-sm italic">04. Ethics Hotline & Whistleblowing</span>
+                            <span class="font-bold text-2xl icon-plus">+</span>
+                            <span class="font-bold text-2xl icon-minus">−</span>
+                        </label>
+                        <div class="content-drawer">
+                            <div class="p-8 border-t border-gray-100 bg-titan-dark text-white rounded-b-lg">
+                                <p class="text-sm font-medium mb-6">We provide a secure, multilingual platform for employees and stakeholders to report concerns regarding ethics, health, or environmental violations.</p>
+                                <div class="bg-white/10 p-6 border-l-4 border-titan-orange rounded">
+                                    <h5 class="font-black text-xs uppercase mb-2">Internal Integrity Line</h5>
+                                    <p class="text-xl font-bold mb-2 tracking-tighter">1-800-TITAN-SAFE</p>
+                                    <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest leading-tight">Available 24/7. Anonymous reporting available. Zero tolerance for retaliation against whistleblowers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <span class="text-[10px] font-black uppercase tracking-[0.4em] text-titan-orange block mb-4">Board Oversight</span>
+                <h2 class="text-4xl font-black text-titan-dark tracking-tighter uppercase italic mb-12 italic">Compliance & <span class="text-titan-orange">Commitment</span></h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-10 shadow-sm border-t-4 border-titan-dark text-left">
+                        <div class="font-black text-titan-orange text-3xl mb-4 italic">01</div>
+                        <h4 class="font-black text-xs uppercase tracking-widest mb-4">Ethics Committee</h4>
+                        <p class="text-xs font-medium text-gray-500 leading-relaxed">Direct board-level oversight on all integrity-related policies and dispute resolutions.</p>
+                    </div>
+                    <div class="bg-white p-10 shadow-sm border-t-4 border-titan-dark text-left">
+                        <div class="font-black text-titan-orange text-3xl mb-4 italic">02</div>
+                        <h4 class="font-black text-xs uppercase tracking-widest mb-4">Integrity Training</h4>
+                        <p class="text-xs font-medium text-gray-500 leading-relaxed">100% of executive leadership and 85% of management complete annual ethics certifications.</p>
+                    </div>
+                    <div class="bg-white p-10 shadow-sm border-t-4 border-titan-dark text-left">
+                        <div class="font-black text-titan-orange text-3xl mb-4 italic">03</div>
+                        <h4 class="font-black text-xs uppercase tracking-widest mb-4">Internal Audit</h4>
+                        <p class="text-xs font-medium text-gray-500 leading-relaxed">Independent audits verify the application of the Vigilance Plan across all subsidiaries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 text-sm border-t-4 border-titan-orange">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-6 gap-8 border-b border-gray-800 pb-12">
+            <div class="col-span-2">
+                <div class="text-white font-black text-2xl tracking-tighter mb-4">TITAN<span class="text-titan-orange">GLOBAL</span></div>
+                <p class="text-xs leading-relaxed max-w-xs">A world leader in concessions, energy solutions, and construction, striving to serve a useful purpose and care for the planet.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Group</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="strategy.html" class="hover:text-white transition">Business model</a></li>
+                    <li><a href="#" class="hover:text-white transition">Our businesses</a></li>
+                    <li><a href="#" class="hover:text-white transition">Research & innovation</a></li>
+                    <li><a href="#" class="hover:text-white transition">Our eMAG</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Our Actions</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="climate.html" class="hover:text-white transition">Acting for the climate</a></li>
+                    <li><a href="circular-economy.html" class="hover:text-white transition">Circular economy</a></li>
+                    <li><a href="#" class="hover:text-white transition">Responsible employer</a></li>
+                    <li><a href="human-rights.html" class="text-titan-orange">Human rights</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Shareholders</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="#" class="hover:text-white transition">Investors</a></li>
+                    <li><a href="#" class="hover:text-white transition">Key Figures</a></li>
+                    <li><a href="#" class="hover:text-white transition">Financial Calendar</a></li>
+                    <li><a href="#" class="hover:text-white transition">Glossary</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">External Links</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="#" class="hover:text-white transition">Titan Foundation</a></li>
+                    <li><a href="#" class="hover:text-white transition">Urban Transitions</a></li>
+                    <li><a href="#" class="hover:text-white transition">Titan Vanguard</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+            <p>&copy; 2026 Titan Global Construction. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0 font-medium">
+                <a href="index.html" class="hover:text-white transition">Homepage</a>
+                <a href="#" class="hover:text-white transition">Legal notices</a>
+                <a href="#" class="hover:text-white transition">Contact us</a>
+                <a href="#" class="hover:text-white transition">Cookie policy</a>
+                <a href="#" class="hover:text-white transition">Personal data</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

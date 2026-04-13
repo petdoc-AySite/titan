@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Recherche Environnement | Titan Global Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .mega-menu { opacity: 0; visibility: hidden; transition: all 0.3s ease; transform: translateY(10px); }
+        .group:hover .mega-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .bg-titan-dark { background-color: #1b252c; }
+        .text-titan-orange { color: #e83540; }
+        .bg-titan-orange { background-color: #e83540; }
+        .hover-zoom img { transition: transform 0.7s ease; }
+        .hover-zoom:hover img { transform: scale(1.05); }
+        
+        /* Accordion Logic for Research Projects */
+        .content-drawer { max-height: 0; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .tab-input:checked ~ .content-drawer { max-height: 1500px; }
+        .tab-input:checked ~ .tab-label .icon-plus { display: none; }
+        .tab-input:checked ~ .tab-label .icon-minus { display: block; }
+        .icon-minus { display: none; }
+        
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 antialiased">
+
+    <div class="bg-gray-100 text-xs text-gray-600 border-b hidden lg:block">
+        <div class="max-w-7xl mx-auto px-6 h-10 flex justify-between items-center">
+            <div class="flex space-x-6 font-medium tracking-wide">
+                <a href="leadership.html" class="hover:text-titan-orange transition font-bold text-gray-900">Leadership</a>
+                <a href="#" class="hover:text-titan-orange transition">Investors</a>
+                <a href="#" class="hover:text-titan-orange transition">Shareholders</a>
+                <a href="#" class="hover:text-titan-orange transition">Newsroom</a>
+                <a href="#" class="hover:text-titan-orange transition">Glossary</a>
+            </div>
+            <div class="flex space-x-6 items-center">
+                <a href="#" class="hover:text-titan-orange transition">Contact us</a>
+                <span class="font-bold text-gray-900 border-l pl-6">EN</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-titan-dark text-white sticky top-0 z-50 shadow-xl border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-black tracking-tighter cursor-pointer">
+                    TITAN<span class="text-titan-orange">GLOBAL</span>
+                </div>
+
+                <div class="hidden lg:flex space-x-8 h-full text-sm font-semibold tracking-wide">
+                    
+                    <div class="group h-full flex items-center">
+                        <button class="hover:text-titan-orange py-4 flex items-center transition">Group <svg class="w-4 h-4 ml-1 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                        <div class="mega-menu absolute top-20 left-0 w-full bg-white text-gray-800 shadow-2xl border-t border-gray-200">
+                            <div class="max-w-7xl mx-auto grid grid-cols-4 gap-8 p-10">
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Business Model</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="strategy.html" class="hover:text-titan-orange transition">Strategy & Performance</a></li>
+                                        <li><a href="footprint.html" class="hover:text-titan-orange transition">Global Footprint</a></li>
+                                        <li><a href="history.html" class="hover:text-titan-orange transition">History & Heritage</a></li>
+                                        <li><a href="leadership.html" class="hover:text-titan-orange transition">Leadership & Governance</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Our Businesses</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="concessions.html" class="hover:text-titan-orange transition">Titan Concessions</a></li>
+                                        <li><a href="energy-solutions.html" class="hover:text-titan-orange transition">Titan Energy Solutions</a></li>
+                                        <li><a href="construction.html" class="hover:text-titan-orange transition">Titan Construction</a></li>
+                                        <li><a href="#" class="hover:text-titan-orange transition">Titan Real Estate</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-black text-titan-orange mb-4 uppercase text-xs tracking-widest">Research & Innovation</h3>
+                                    <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                                        <li><a href="#" class="hover:text-titan-orange transition">The Vanguard Project</a></li>
+                                        <li><a href="#" class="hover:text-titan-orange transition">Lab Recherche Environnement</a></li>
+                                        <li><a href="#" class="hover:text-titan-orange transition">Urban Transitions Think Tank</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-6 rounded border border-gray-100">
+                                    <span class="text-xs uppercase font-bold text-gray-400 mb-2 block">Featured Publication</span>
+                                    <p class="font-bold text-sm text-gray-900">2026 Universal Registration Document</p>
+                                    <a href="#" class="text-titan-orange text-xs font-bold mt-4 block hover:underline">Download PDF →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="flex items-center hover:text-titan-orange transition">Our Missions & Actions</a>
+                    <a href="#" class="flex items-center hover:text-titan-orange transition">Innovation</a>
+                    <a href="#" class="flex items-center hover:text-titan-orange transition">Join Us</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <button class="hover:text-titan-orange transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        
+        <section class="relative bg-titan-dark text-white py-24 lg:py-32 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-40">
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" alt="Scientific Research">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-titan-dark via-titan-dark/90 to-transparent z-10"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-20">
+                <nav class="text-[10px] font-black text-titan-orange mb-6 uppercase tracking-[0.4em]">Research & Innovation</nav>
+                <h1 class="text-5xl lg:text-7xl font-black mb-8 tracking-tighter leading-[0.9] max-w-3xl">
+                    Lab Recherche <br><span class="text-titan-orange">Environnement.</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-2xl font-medium leading-relaxed">
+                    A unique scientific partnership bridging the gap between advanced academic research and scalable, commercial construction materials to drastically reduce the environmental footprint of our industry.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <div class="lg:w-1/2">
+                        <span class="text-[10px] font-black text-titan-orange uppercase tracking-widest block mb-4">The Partnership</span>
+                        <h2 class="text-3xl lg:text-4xl font-black text-titan-dark tracking-tighter uppercase mb-6 leading-tight">Where Science Meets <br>Civil Engineering.</h2>
+                        <div class="w-16 h-1 bg-titan-orange mb-8"></div>
+                        <p class="text-gray-600 mb-6 leading-relaxed font-medium">
+                            Founded in collaboration with leading global technical universities, the Lab Recherche Environnement accelerates the transition from theoretical environmental science to practical, field-ready construction applications. 
+                        </p>
+                        <p class="text-gray-600 mb-8 leading-relaxed font-medium">
+                            Our dedicated teams of PhD researchers, materials scientists, and Titan structural engineers work side-by-side to solve the most pressing challenges in energy efficiency, urban biodiversity, and carbon-intensive materials.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="border-l-4 border-titan-orange pl-4">
+                                <div class="text-3xl font-black text-titan-dark">15+</div>
+                                <div class="text-[10px] font-bold uppercase tracking-widest text-gray-500 mt-1">Years of Research</div>
+                            </div>
+                            <div class="border-l-4 border-titan-dark pl-4">
+                                <div class="text-3xl font-black text-titan-orange">30</div>
+                                <div class="text-[10px] font-bold uppercase tracking-widest text-gray-500 mt-1">Patents Deployed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&q=80&w=600" class="rounded-xl shadow-lg h-64 w-full object-cover" alt="Lab Work">
+                            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=600" class="rounded-xl shadow-lg h-64 w-full object-cover mt-8" alt="Green Architecture">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-[10px] font-black text-titan-orange uppercase tracking-widest block mb-4">Scientific Focus</span>
+                    <h2 class="text-4xl font-black text-titan-dark tracking-tighter uppercase">Our Three Pillars of Study</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="group relative bg-white p-10 border border-gray-200 rounded-xl hover:border-titan-orange transition-all duration-300 overflow-hidden h-[380px] flex flex-col justify-between shadow-sm hover:shadow-xl">
+                        <div class="relative z-10">
+                            <div class="text-titan-orange font-black text-5xl mb-6 opacity-20 group-hover:opacity-100 transition-opacity">01</div>
+                            <h3 class="font-black text-2xl text-titan-dark uppercase tracking-tight mb-4 leading-none">Eco-Design & Lifecycle</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed group-hover:text-gray-900 transition-colors">
+                                Developing highly precise Life Cycle Assessment (LCA) tools to evaluate the exact carbon, water, and energy footprint of structures before ground is broken. We are engineering new algorithms to optimize material choices dynamically during the blueprint phase.
+                            </p>
+                        </div>
+                        <div class="relative z-10 mt-6 border-t border-gray-100 pt-4">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-titan-orange">Key Project: Dynamic LCA Modeling</span>
+                        </div>
+                    </div>
+
+                    <div class="group relative bg-white p-10 border border-gray-200 rounded-xl hover:border-titan-orange transition-all duration-300 overflow-hidden h-[380px] flex flex-col justify-between shadow-sm hover:shadow-xl">
+                        <div class="relative z-10">
+                            <div class="text-titan-orange font-black text-5xl mb-6 opacity-20 group-hover:opacity-100 transition-opacity">02</div>
+                            <h3 class="font-black text-2xl text-titan-dark uppercase tracking-tight mb-4 leading-none">Urban Biodiversity</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed group-hover:text-gray-900 transition-colors">
+                                Transforming infrastructure into ecological corridors. Our biologists study how to integrate vegetation into concrete facades, design animal-friendly highway crossings, and utilize construction to actively restore native ecosystems rather than deplete them.
+                            </p>
+                        </div>
+                        <div class="relative z-10 mt-6 border-t border-gray-100 pt-4">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-titan-orange">Key Project: Bio-receptive Concrete</span>
+                        </div>
+                    </div>
+
+                    <div class="group relative bg-white p-10 border border-gray-200 rounded-xl hover:border-titan-orange transition-all duration-300 overflow-hidden h-[380px] flex flex-col justify-between shadow-sm hover:shadow-xl">
+                        <div class="relative z-10">
+                            <div class="text-titan-orange font-black text-5xl mb-6 opacity-20 group-hover:opacity-100 transition-opacity">03</div>
+                            <h3 class="font-black text-2xl text-titan-dark uppercase tracking-tight mb-4 leading-none">Energy & Microclimates</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed group-hover:text-gray-900 transition-colors">
+                                Combating the Urban Heat Island (UHI) effect. We simulate how building shapes, paving materials, and smart grids interact with weather patterns, allowing us to design neighborhoods that naturally cool themselves and share energy efficiently.
+                            </p>
+                        </div>
+                        <div class="relative z-10 mt-6 border-t border-gray-100 pt-4">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-titan-orange">Key Project: Albedo Paving Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-titan-dark text-white">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-black tracking-tighter uppercase italic">From Lab to Site</h2>
+                    <p class="text-gray-400 mt-4 font-medium">Applied science currently active on Titan Global construction sites.</p>
+                </div>
+
+                <div class="space-y-4">
+                    
+                    <div class="border border-white/20 rounded-lg overflow-hidden bg-white/5 backdrop-blur-sm">
+                        <input type="checkbox" id="app1" class="hidden tab-input" checked>
+                        <label for="app1" class="tab-label flex justify-between items-center p-6 cursor-pointer hover:bg-white/10 transition">
+                            <span class="font-black uppercase tracking-widest text-sm">Self-Healing Concrete Modules</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-plus">+</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-minus">−</span>
+                        </label>
+                        <div class="content-drawer">
+                            <div class="p-8 border-t border-white/10 text-sm leading-relaxed text-gray-300">
+                                <div class="flex flex-col md:flex-row gap-8">
+                                    <div class="md:w-2/3">
+                                        <h4 class="text-titan-orange font-bold mb-2 uppercase text-xs tracking-widest">The Science</h4>
+                                        <p class="mb-4">Working with microbiologists, the Lab embedded dormant, limestone-producing bacteria into concrete mixes. When micro-cracks form and water enters, the bacteria activate, sealing the crack automatically.</p>
+                                        <h4 class="text-titan-orange font-bold mb-2 uppercase text-xs tracking-widest">The Application</h4>
+                                        <p>Currently deployed in the structural foundations of our coastal concession projects, extending the lifespan of marine infrastructure by an estimated 40 years without manual maintenance.</p>
+                                    </div>
+                                    <div class="md:w-1/3">
+                                        <img src="https://images.unsplash.com/photo-1518242007632-4d226a26ae2b?auto=format&fit=crop&q=80&w=400" alt="Concrete" class="rounded shadow-md grayscale">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border border-white/20 rounded-lg overflow-hidden bg-white/5 backdrop-blur-sm">
+                        <input type="checkbox" id="app2" class="hidden tab-input">
+                        <label for="app2" class="tab-label flex justify-between items-center p-6 cursor-pointer hover:bg-white/10 transition">
+                            <span class="font-black uppercase tracking-widest text-sm">Urban Heat Simulators</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-plus">+</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-minus">−</span>
+                        </label>
+                        <div class="content-drawer">
+                            <div class="p-8 border-t border-white/10 text-sm leading-relaxed text-gray-300">
+                                <div class="flex flex-col md:flex-row gap-8">
+                                    <div class="md:w-2/3">
+                                        <h4 class="text-titan-orange font-bold mb-2 uppercase text-xs tracking-widest">The Science</h4>
+                                        <p class="mb-4">The Lab developed proprietary thermal mapping software that calculates exactly how sunlight, wind, and building materials interact to trap or release heat in dense urban grids.</p>
+                                        <h4 class="text-titan-orange font-bold mb-2 uppercase text-xs tracking-widest">The Application</h4>
+                                        <p>Used by Titan Real Estate to design the layout of our new master-planned community in Southern Europe. By altering building orientations and specifying high-albedo road surfaces, ambient street temperatures were reduced by 3.5°C.</p>
+                                    </div>
+                                    <div class="md:w-1/3">
+                                        <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=400" alt="City Heat Map" class="rounded shadow-md grayscale">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border border-white/20 rounded-lg overflow-hidden bg-white/5 backdrop-blur-sm">
+                        <input type="checkbox" id="app3" class="hidden tab-input">
+                        <label for="app3" class="tab-label flex justify-between items-center p-6 cursor-pointer hover:bg-white/10 transition">
+                            <span class="font-black uppercase tracking-widest text-sm">Bio-Sourced Insulation Alternatives</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-plus">+</span>
+                            <span class="text-titan-orange font-bold text-2xl icon-minus">−</span>
+                        </label>
+                        <div class="content-drawer">
+                            <div class="p-8 border-t border-white/10 text-sm leading-relaxed text-gray-300">
+                                <div class="flex flex-col md:flex-row gap-8">
+                                    <div class="md:w-2/3">
+                                        <h4 class="text-titan-orange font-bold mb-2 uppercase text-xs tracking-widest">The Science</h4>
+                                        <p class="mb-4">Testing and certifying the structural and thermal integrity of rapidly renewable agricultural byproducts—specifically hemp and compacted straw—as commercial-grade building insulation.</p>
+                                        <h4 class="text-titan-orange font-bold mb-2 uppercase text-xs tracking-widest">The Application</h4>
+                                        <p>Now the standard insulation protocol for all Titan Global "Class A" low-rise commercial developments, drastically cutting Scope 3 emissions associated with traditional fiberglass and foam.</p>
+                                    </div>
+                                    <div class="md:w-1/3">
+                                        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=400" alt="Bio Materials" class="rounded shadow-md grayscale">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 text-sm border-t-4 border-titan-orange">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-6 gap-8 border-b border-gray-800 pb-12">
+            <div class="col-span-2">
+                <div class="text-white font-black text-2xl tracking-tighter mb-4">TITAN<span class="text-titan-orange">GLOBAL</span></div>
+                <p class="text-xs leading-relaxed max-w-xs">A world leader in concessions, energy solutions, and construction, striving to serve a useful purpose and care for the planet.</p>
+            </div>
+            
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Group</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="strategy.html" class="hover:text-white transition">Business model</a></li>
+                    <li><a href="#" class="hover:text-white transition">Our businesses</a></li>
+                    <li><a href="#" class="hover:text-white transition">Research & innovation</a></li>
+                    <li><a href="#" class="hover:text-white transition">Our eMAG</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Our Actions</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="#" class="hover:text-white transition">Acting for the climate</a></li>
+                    <li><a href="#" class="hover:text-white transition">Circular economy</a></li>
+                    <li><a href="#" class="hover:text-white transition">Responsible employer</a></li>
+                    <li><a href="#" class="hover:text-white transition">Human rights</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Shareholders</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="#" class="hover:text-white transition">Investors</a></li>
+                    <li><a href="#" class="hover:text-white transition">Key Figures</a></li>
+                    <li><a href="#" class="hover:text-white transition">Financial Calendar</a></li>
+                    <li><a href="#" class="hover:text-white transition">Glossary</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">External Links</h3>
+                <ul class="space-y-3 text-xs">
+                    <li><a href="#" class="hover:text-white transition">Titan Foundation</a></li>
+                    <li><a href="#" class="hover:text-white transition">Urban Transitions</a></li>
+                    <li><a href="#" class="hover:text-white transition">Titan Vanguard</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+            <p>&copy; 2026 Titan Global Construction. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0 font-medium">
+                <a href="index.html" class="hover:text-white transition">Homepage</a>
+                <a href="#" class="hover:text-white transition">Legal notices</a>
+                <a href="#" class="hover:text-white transition">Contact us</a>
+                <a href="#" class="hover:text-white transition">Cookie policy</a>
+                <a href="#" class="hover:text-white transition">Personal data</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
